@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "secure-json-parse": "4.1.0"
+  }
+}
