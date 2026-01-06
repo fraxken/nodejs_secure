@@ -1,16 +1,18 @@
+// Import Third-party Dependencies
+import argon2 from "argon2";
+
 export type User = {
   email: string;
   password: string;
 };
 
 export class UserDatabase {
-  #users: Map<string, User>;
+  #users = new Map<string, User>();
 
-  constructor() {
-    this.#users = new Map();
+  async initialize(): Promise<void> {
     this.addUser({
       email: "admin@example.com",
-      password: "F@obar@x$8513"
+      password: await argon2.hash("F@obar@x$8513")
     });
   }
 

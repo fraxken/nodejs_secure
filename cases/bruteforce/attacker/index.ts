@@ -13,7 +13,10 @@ async function authentication(
     new URL("/api/authenticate", kRootApi),
     {
       method: "POST",
-      body: { email, password }
+      body: JSON.stringify({ email, password }),
+      headers: {
+        "Content-Type": "application/json"
+      }
     }
   );
   await body.dump();
@@ -24,7 +27,7 @@ async function authentication(
 const accounts = [
   { email: "admin@example.com", password: "F@obar@x$8513" }
 ];
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < 1; i++) {
   accounts.push({
     email: faker.internet.email(),
     password: faker.internet.password({

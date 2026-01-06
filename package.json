@@ -5,7 +5,12 @@
   "workspaces": [
     "cases/sandbox",
     "cases/redos",
-    "cases/prototype-poisoning"
+    "cases/prototype-poisoning",
+    "cases/path-traversal",
+    "cases/child-process",
+    "cases/sql-injection",
+    "cases/bruteforce/attacker",
+    "cases/bruteforce/defender"
   ],
   "repository": {
     "type": "git",
