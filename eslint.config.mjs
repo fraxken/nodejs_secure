@@ -9,7 +9,8 @@ export default [
       "func-names": "off",
       "no-eval": "off",
       "func-style": "off",
-      "no-undef": "off"
+      "no-undef": "off",
+      "no-extend-native": "off"
     },
     languageOptions: {
       sourceType: "module",
@@ -22,7 +23,8 @@ export default [
       "**/tmp/",
       "**/dist/",
       "**/coverage/",
-      "**/fixtures/"
+      "**/fixtures/",
+      "**/defensive-coding/"
     ]
   }
 ];
