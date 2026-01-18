@@ -5,6 +5,8 @@ Matin
 - Introduction aux termes (SCA, CVE, Supply-chain, SBOM)
 - Questions sur les connaissances et expériences (audit, test d'intrusion)
 - Slides sur les risques communs en Node.js
+- npx is-my-node-vulnerable
+  https://github.com/nodejs/is-my-node-vulnerable
 - Les bases de la sécurité d'un projet Node.js/NPM
     -> Configuration du fichier .npmrc
     -> Fonctionnement de NPM (résolution de l'arbre, persistance en lockfile)
