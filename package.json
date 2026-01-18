@@ -10,7 +10,8 @@
     "cases/child-process",
     "cases/sql-injection",
     "cases/bruteforce/attacker",
-    "cases/bruteforce/defender"
+    "cases/bruteforce/defender",
+    "cases/crypto-safe"
   ],
   "repository": {
     "type": "git",
