@@ -18,6 +18,8 @@ Matin
     -> Les autres risques (PDF)
 - Découverte des outils SCA (gratuit) Socket.dev et Snyk.
 - Gérer la maintenance et mise à jour d'un vieux projet Node.js (napi-headers)
+  - Audit (npq & sfw)
+  - https://github.com/raineorshine/npm-check-updates
 
 Aprem
 
