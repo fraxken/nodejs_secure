@@ -23,8 +23,12 @@ Aprem
 
 - Workshop defensive coding (1h)
     - Voir des exemples de sandboxing avec SES et VM2.
-- Autres exemples d'attaques
-- Sécurisation d'un projet GitHub (protection des branches, PIN des artefacts CI, permissions...)
+- Voir les différents exemples
+- Sécurisation d'un projet GitHub (https://dev.to/nodesecure/securize-your-github-org-4lb7)
+  - Protection des branches
+  - Security Policy
+  - OSSF Scorecard
+  - Hardening GA (https://app.stepsecurity.io/)
 - Faire une revue global du PDF (draft)
 
 - Questions/Réponses

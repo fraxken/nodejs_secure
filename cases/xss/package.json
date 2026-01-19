@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "lodash.escape": "4.0.1",
+    "open": "11.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash.escape": "4.0.9"
+  }
+}

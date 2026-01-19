@@ -11,7 +11,8 @@
     "cases/sql-injection",
     "cases/bruteforce/attacker",
     "cases/bruteforce/defender",
-    "cases/crypto-safe"
+    "cases/crypto-safe",
+    "cases/xss"
   ],
   "repository": {
     "type": "git",

@@ -1,0 +1,6 @@
+
+# Packages
+
+- html-escape (non-maintenu)
+- he (non-maintenu)
+- lodash.escape (maintenu mais nécessite @types en plus)
